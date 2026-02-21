@@ -49,3 +49,5 @@ This activity focuses on understanding:
 </p>
 
 <p align="center"><em>Figure 3. Final rendered scene with spinning text</em></p>
+
+<h3 align="center">Platformer Character Setup</h3> <p align="center"> <img src="https://github.com/user-attachments/assets/01740816-f783-4a6a-b200-7280c4eadb4f" alt="Editor Setup" width="900" /> </p> <p align="center"><em>Figure 1. Scene hierarchy showing CharacterBody2D and StaticBody2D nodes</em></p> <br> <p align="center"> <img src="https://github.com/user-attachments/assets/01e9d400-3c82-4f02-8f6c-8b6cd7df3bc5" alt="Player Movement" width="900" /> </p> <p align="center"><em>Figure 2. Player character standing on a WorldBoundaryShape2D floor</em></p> <br> <p align="center"> <img src="https://github.com/user-attachments/assets/49ca8d4b-da38-4d16-863c-52e1c68b64db" alt="GDScript Code" width="900" /> </p> <p align="center"><em>Figure 3. GDScript implementation of the <code>move_and_slide()</code> function</em></p>
