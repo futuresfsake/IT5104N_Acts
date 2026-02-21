@@ -1,0 +1,8 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1770021741
+icon.svg::CompressedTexture2D::7367467023584483128::1769962945::1769962950::1::::<><><>0<>0<>82af2f6f7d175a8f91290da5a4aff2fb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+label_3d.gd::GDScript::5565989472809572284::1769963541::0::1::::<>Label3D<><>0<>0<><>::
+main.tscn::PackedScene::1086656182540870231::1769964532::0::1::::<><><>0<>0<><>::uid://clkhbevm6fecq::::res://label_3d.gd<>uid://cdbhu23t06py0::::res://mesh_instance_3d_2.gd<>uid://d05mbj07gmvu7::::res://mesh_instance_3d_3.gd<>uid://br5y2b0lo8hdt::::res://mesh_instance_3d_4.gd
+mesh_instance_3d_2.gd::GDScript::4985934473164717805::1769963763::0::1::::<>MeshInstance3D<><>0<>0<><>::
+mesh_instance_3d_3.gd::GDScript::8976645377151718428::1769963773::0::1::::<>MeshInstance3D<><>0<>0<><>::
+mesh_instance_3d_4.gd::GDScript::3643067874086536349::1769963783::0::1::::<>MeshInstance3D<><>0<>0<><>::

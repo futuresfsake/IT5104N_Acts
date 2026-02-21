@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dkju0cd3cl1d4"]
+
+[ext_resource type="PackedScene" uid="uid://b1a1h5n4v7nuc" path="res://Player.tscn" id="1_ypqmy"]
+[ext_resource type="Script" uid="uid://bump16tmp082x" path="res://player.gd" id="2_dyby8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yc5i5"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=438320053]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1349841389]
+position = Vector2(-1, -2)
+shape = SubResource("WorldBoundaryShape2D_yc5i5")
+
+[node name="Player" parent="." unique_id=156277412 instance=ExtResource("1_ypqmy")]
+position = Vector2(296, -412)
+script = ExtResource("2_dyby8")
