@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://uwgk1ljw5qxy"]
+
+[ext_resource type="Texture2D" uid="uid://bng3fdn4vspy5" path="res://Jump (32x32).png" id="1_0eyao"]
+[ext_resource type="Script" uid="uid://old6vim113dv" path="res://Scenes/main_character.gd" id="1_11o2n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11o2n"]
+size = Vector2(30.75, 48)
+
+[node name="Pink" type="CharacterBody2D" unique_id=392152385]
+script = ExtResource("1_11o2n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1215397158]
+texture_filter = 1
+position = Vector2(5.1249995, 24.125013)
+scale = Vector2(1.1796875, 1.6171867)
+texture = ExtResource("1_0eyao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=589120578]
+position = Vector2(8, 25)
+shape = SubResource("RectangleShape2D_11o2n")

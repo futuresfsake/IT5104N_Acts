@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://8b7gikl531h8"]
+
+[ext_resource type="Script" uid="uid://740nbib54313" path="res://Scenes/main_menu.gd" id="1_1ehe0"]
+[ext_resource type="Texture2D" uid="uid://baf3s80cmgjk6" path="res://Scenes/Brown.png" id="1_48xlc"]
+[ext_resource type="Texture2D" uid="uid://bltua7irjgsqa" path="res://Scenes/cooltext503712891763336.png" id="2_1ehe0"]
+
+[node name="MainMenu" type="Node" unique_id=314129169]
+script = ExtResource("1_1ehe0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=756404600]
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=1444269674]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_48xlc")
+
+[node name="level2" type="Button" parent="CanvasLayer/TextureRect2" unique_id=1416599545]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.56
+anchor_right = 0.5
+anchor_bottom = 0.588
+offset_left = -16.0
+offset_top = 5.119995
+offset_right = 212.0
+offset_bottom = 84.922
+grow_horizontal = 2
+grow_vertical = 2
+text = "Level 2"
+
+[node name="level1" type="Button" parent="CanvasLayer/TextureRect2" unique_id=502513899]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.56
+anchor_right = 0.5
+anchor_bottom = 0.588
+offset_left = -252.0
+offset_top = 6.119995
+offset_right = -48.0
+offset_bottom = 66.47601
+grow_horizontal = 2
+grow_vertical = 2
+text = "Level 1"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=964242783]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.537
+anchor_right = 0.5
+anchor_bottom = 0.537
+offset_left = -256.0
+offset_top = -96.97601
+offset_right = 237.0
+offset_bottom = 0.023986816
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1ehe0")
+
+[connection signal="pressed" from="CanvasLayer/TextureRect2/level2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureRect2/level1" to="." method="_on_button_pressed"]
