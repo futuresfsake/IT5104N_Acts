@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://dtru4iaflcgxw"]
 
 [ext_resource type="Texture2D" uid="uid://cyrqufavbcqv" path="res://Green.png" id="1_s0p3g"]
+[ext_resource type="Script" uid="uid://ru4gjw4bulj3" path="res://Scenes/health_bar.gd" id="2_6ll4n"]
 [ext_resource type="Texture2D" uid="uid://jdy416njll7m" path="res://Terrain (16x16).png" id="2_ek34n"]
+[ext_resource type="Texture2D" uid="uid://c6ch06mfd424q" path="res://hud_heartFull.png" id="2_ysn8j"]
+[ext_resource type="Script" uid="uid://c5rnhakuhonig" path="res://Scenes/hud_heart_full.gd" id="3_6ll4n"]
 [ext_resource type="PackedScene" uid="uid://uwgk1ljw5qxy" path="res://Scenes/main_character.tscn" id="3_ek34n"]
 [ext_resource type="Texture2D" uid="uid://dcvedhbpfghfp" path="res://Idle.png" id="4_1tmsk"]
 [ext_resource type="Script" uid="uid://d2bepl5hdeulo" path="res://Scenes/area_2d.gd" id="5_slnnj"]
@@ -224,5 +227,44 @@ layer_0/tile_data = PackedInt32Array(1835021, 0, 0, 1966094, 65536, 0, 1966095, 
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1208748168]
 script = ExtResource("5_slnnj")
+
+[node name="Health_bar" type="CanvasLayer" parent="." unique_id=330715155]
+script = ExtResource("2_6ll4n")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Health_bar" unique_id=882322005]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="heart" type="TextureRect" parent="Health_bar/HBoxContainer" unique_id=1189343770]
+layout_mode = 2
+
+[node name="HudHeartFull" type="Sprite2D" parent="Health_bar/HBoxContainer/heart" unique_id=729748149]
+position = Vector2(48, 50)
+texture = ExtResource("2_ysn8j")
+script = ExtResource("3_6ll4n")
+
+[node name="heart2" type="TextureRect" parent="Health_bar/HBoxContainer" unique_id=1564599056]
+layout_mode = 2
+
+[node name="HudHeartFull" type="Sprite2D" parent="Health_bar/HBoxContainer/heart2" unique_id=1926302282]
+position = Vector2(101, 49)
+texture = ExtResource("2_ysn8j")
+script = ExtResource("3_6ll4n")
+
+[node name="heart3" type="TextureRect" parent="Health_bar/HBoxContainer" unique_id=423435662]
+layout_mode = 2
+
+[node name="HudHeartFull" type="Sprite2D" parent="Health_bar/HBoxContainer/heart3" unique_id=516582082]
+position = Vector2(160, 49)
+texture = ExtResource("2_ysn8j")
+script = ExtResource("3_6ll4n")
+
+[node name="heart4" type="TextureRect" parent="Health_bar/HBoxContainer" unique_id=673854384]
+layout_mode = 2
+
+[node name="HudHeartFull" type="Sprite2D" parent="Health_bar/HBoxContainer/heart4" unique_id=1577017463]
+position = Vector2(216, 49)
+texture = ExtResource("2_ysn8j")
+script = ExtResource("3_6ll4n")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

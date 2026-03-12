@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Act2_LevelDesign"
-run/main_scene="uid://cdhdc0knxdvfa"
+run/main_scene="uid://dtru4iaflcgxw"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

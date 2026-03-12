@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://40xfndao328d"]
+
+[ext_resource type="Texture2D" uid="uid://c6ch06mfd424q" path="res://hud_heartFull.png" id="1_jnm1l"]
+[ext_resource type="Script" uid="uid://hyjqbkecx8gj" path="res://hud_heart_full.gd" id="2_orxdf"]
+
+[sub_resource type="Animation" id="Animation_c6624"]
+resource_name = "pulsate"
+length = 6.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nc7jx"]
+_data = {
+&"pulsate": SubResource("Animation_c6624")
+}
+
+[node name="HudHeartFull" type="Sprite2D" unique_id=600377310]
+position = Vector2(83, 55)
+texture = ExtResource("1_jnm1l")
+script = ExtResource("2_orxdf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=990522388]
+libraries/ = SubResource("AnimationLibrary_nc7jx")
