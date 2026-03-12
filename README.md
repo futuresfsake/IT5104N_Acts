@@ -82,7 +82,7 @@ basic hazards for gameplay challenges.
 
 <h3>Activity</h3>
 <p>
-Design two levels for an <b>endless runner game</b> (2D or 3D).
+Design two levels for an <b>Endless Runner Game</b> (2D or 3D).
 </p>
 
 <h3>Screenshots</h3>
@@ -121,5 +121,31 @@ src="https://github.com/user-attachments/assets/5234fffb-5367-4106-bacd-3454d3e4
 <p><b>HUD Implementation</b></p>
 <img width="1144" height="631"
 src="https://github.com/user-attachments/assets/e4642676-2136-4db2-ae9c-9946a9cb64cf">
- 
+
+<hr>
+
+<h2>Week 3 – Activity 2: AI & Enemies</h2>
+
+<p>
+This activity focuses on implementing enemy artificial intelligence (AI),
+including navigation systems and behavior patterns.
+</p>
+
+<h3>Subtopics</h3>
+<ul>
+<li>Pathfinding navigation</li>
+<li>Finite State Machines for behaviors (Patrol / Attack)</li>
+<li>Enemy AI patterns</li>
+</ul>
+
+<h3>Screenshots</h3>
+
+<p><b>Enemy AI Behavior</b></p>
+<img width="1142" height="627" alt="Act2week3"
+src="https://github.com/user-attachments/assets/a92f4a9a-786f-42c3-8c8d-3124d3d6fcca">
+
+<p><b>Enemy Pathfinding</b></p>
+<img width="1144" height="628" alt="Act2Week3"
+src="https://github.com/user-attachments/assets/ec4c5c6c-2eab-4e6e-8b8e-072d240909ef">
+      
 
