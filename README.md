@@ -147,5 +147,37 @@ src="https://github.com/user-attachments/assets/a92f4a9a-786f-42c3-8c8d-3124d3d6
 <p><b>Enemy Pathfinding</b></p>
 <img width="1144" height="628" alt="Act2Week3"
 src="https://github.com/user-attachments/assets/ec4c5c6c-2eab-4e6e-8b8e-072d240909ef">
-      
 
+
+<hr>
+
+<h2>Week 4 – Activity 1: 3D Basics & Optimization</h2>
+
+<p>
+This activity introduces the fundamentals of working with 3D environments in
+<b>Godot Engine</b>. It focuses on understanding 3D scene structure, camera
+systems, lighting, and basic optimization techniques to improve game
+performance.
+</p>
+
+<h3>Concepts Covered</h3>
+<ul>
+<li>3D scene setup in Godot</li>
+<li>Working with cameras and lighting</li>
+<li>Basic 3D object placement</li>
+<li>Performance optimization techniques</li>
+</ul>
+
+<h3>Screenshots</h3>
+
+<p><b>3D Scene Setup</b></p>
+<img width="565" height="472"
+src="https://github.com/user-attachments/assets/2ebcb332-ec65-4531-b5e3-1bf0302a2cc4">
+
+<p><b>3D Environment Configuration</b></p>
+<img width="1102" height="535"
+src="https://github.com/user-attachments/assets/243fc323-4522-43a7-87f6-48d4436bc307">
+
+<p><b>Optimization Settings</b></p>
+<img width="1110" height="604"
+src="https://github.com/user-attachments/assets/5f8876e1-3b5e-4d12-a915-01087e53c4b0">
