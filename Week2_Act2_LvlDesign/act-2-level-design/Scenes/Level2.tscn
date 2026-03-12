@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://cdhdc0knxdvfa"]
 
 [ext_resource type="Texture2D" uid="uid://cyrqufavbcqv" path="res://Green.png" id="1_ex07k"]
+[ext_resource type="Script" uid="uid://4hcyqe8ae50x" path="res://Scenes/enemy.gd" id="2_ehjmi"]
+[ext_resource type="Texture2D" uid="uid://do2py2ftft5r5" path="res://Fall (32x32).png" id="2_jriq2"]
 [ext_resource type="Texture2D" uid="uid://jdy416njll7m" path="res://Terrain (16x16).png" id="2_psxy2"]
 [ext_resource type="PackedScene" uid="uid://uwgk1ljw5qxy" path="res://Scenes/main_character.tscn" id="3_wwdpc"]
 [ext_resource type="Texture2D" uid="uid://dcvedhbpfghfp" path="res://Idle.png" id="4_6faey"]
+[ext_resource type="Texture2D" uid="uid://c6ch06mfd424q" path="res://hud_heartFull.png" id="6_ehjmi"]
+[ext_resource type="Script" uid="uid://d4ifvci4nw6ab" path="res://Scenes/ui.gd" id="7_p4u3k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4u3k"]
+size = Vector2(19.696976, 32.842102)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1tmsk"]
 texture = ExtResource("2_psxy2")
@@ -222,13 +229,58 @@ sources/0 = SubResource("TileSetAtlasSource_rr6jd")
 
 [node name="TextureRect" type="TextureRect" unique_id=471164062]
 texture_filter = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_left = -0.105000004
+anchor_top = 0.448
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 127.96001
+offset_top = -317.30402
+offset_right = 23.0
+offset_bottom = -27.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_ex07k")
 stretch_mode = 1
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=723118224]
+script = ExtResource("2_ehjmi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=1200964901]
+position = Vector2(209, 438.00003)
+scale = Vector2(1.0468746, 1.3750005)
+texture = ExtResource("2_jriq2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1113764793]
+position = Vector2(210.15625, 438.5)
+scale = Vector2(1.03125, 1.1875)
+shape = SubResource("RectangleShape2D_p4u3k")
+
+[node name="Enemy2" type="CharacterBody2D" parent="." unique_id=1454813883]
+script = ExtResource("2_ehjmi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy2" unique_id=583490316]
+position = Vector2(375, 391.00003)
+scale = Vector2(1.0468746, 1.3750005)
+texture = ExtResource("2_jriq2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2" unique_id=1195220255]
+position = Vector2(395, 587)
+scale = Vector2(1.03125, 1.1875)
+shape = SubResource("RectangleShape2D_p4u3k")
+
+[node name="Enemy3" type="CharacterBody2D" parent="." unique_id=145436871]
+script = ExtResource("2_ehjmi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy3" unique_id=1604859137]
+position = Vector2(848, 430.00003)
+scale = Vector2(1.0468746, 1.3750005)
+texture = ExtResource("2_jriq2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy3" unique_id=1965761098]
+position = Vector2(479.00003, 546)
+scale = Vector2(1.03125, 1.1875)
+shape = SubResource("RectangleShape2D_p4u3k")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=177775093]
 tile_set = SubResource("TileSet_rr6jd")
@@ -242,3 +294,60 @@ position = Vector2(65, 504)
 tile_set = SubResource("TileSet_qm4kx")
 format = 2
 layer_0/tile_data = PackedInt32Array(1835021, 0, 0)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1896714680]
+script = ExtResource("7_p4u3k")
+
+[node name="Hearts" type="Panel" parent="UI" unique_id=1485998572]
+offset_left = 52.0
+offset_top = 54.0
+offset_right = 217.0
+offset_bottom = 98.0
+
+[node name="Heart" type="TextureRect" parent="UI/Hearts" unique_id=771984375]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HudHeartFull" type="Sprite2D" parent="UI/Hearts/Heart" unique_id=218946943]
+texture_filter = 1
+position = Vector2(25, 22)
+scale = Vector2(0.5801887, 0.75)
+texture = ExtResource("6_ehjmi")
+
+[node name="Heart3" type="TextureRect" parent="UI/Hearts" unique_id=1421571577]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HudHeartFull" type="Sprite2D" parent="UI/Hearts/Heart3" unique_id=1772659877]
+texture_filter = 1
+position = Vector2(62, 22)
+scale = Vector2(0.5801887, 0.75)
+texture = ExtResource("6_ehjmi")
+
+[node name="Heart2" type="TextureRect" parent="UI/Hearts" unique_id=1940918592]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 17.0
+offset_right = 171.0
+offset_bottom = 57.0
+
+[node name="HudHeartFull" type="Sprite2D" parent="UI/Hearts/Heart2" unique_id=1015915132]
+texture_filter = 1
+position = Vector2(-30, 6)
+scale = Vector2(0.5801887, 0.75)
+texture = ExtResource("6_ehjmi")
+
+[node name="Heart5" type="TextureRect" parent="UI/Hearts" unique_id=1595815092]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 17.0
+offset_right = 171.0
+offset_bottom = 57.0
+
+[node name="HudHeartFull" type="Sprite2D" parent="UI/Hearts/Heart5" unique_id=653476588]
+texture_filter = 1
+position = Vector2(9, 6)
+scale = Vector2(0.5801887, 0.75)
+texture = ExtResource("6_ehjmi")
