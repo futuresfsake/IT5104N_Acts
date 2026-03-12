@@ -1,7 +1,8 @@
 <h1>Game Development Activities Documentation</h1>
 
-<h2>Week 1 – Activity 1</h2>
-<h3>Simple Scene with a Moving Node</h3>
+<hr>
+
+<h2>Week 1 – Activity 1: Simple Scene with a Moving Node</h2>
 
 <p>
 This activity demonstrates creating a basic scene in <b>Godot Engine</b> and implementing
@@ -31,9 +32,7 @@ src="https://github.com/user-attachments/assets/585e5328-b658-4f9a-a032-80855400
 <img width="1149" height="721"
 src="https://github.com/user-attachments/assets/ab11649e-23a2-418a-8276-8194be228d8f">
 
-
 <hr>
-
 
 <h2>Week 2 – Gameplay Mechanics</h2>
 
@@ -64,9 +63,7 @@ src="https://github.com/user-attachments/assets/6d580308-d1e6-4909-95c0-c9643c3f
 <img width="1112" height="666"
 src="https://github.com/user-attachments/assets/68829918-24ea-495b-a4ea-bff510fc3c4c">
 
-
 <hr>
-
 
 <h2>Week 2 – Activity 2: Level Design</h2>
 
@@ -97,3 +94,32 @@ src="https://github.com/user-attachments/assets/abe56405-def4-4565-99c5-d31299e7
 <p><b>Level Layout</b></p>
 <img width="1149" height="634"
 src="https://github.com/user-attachments/assets/3363e047-518e-48ea-b954-37f9aecd5722">
+
+<hr>
+
+<h2>Week 3 – Activity 1: UI/UX & Audio</h2>
+
+<p>
+This activity introduces user interface design and audio integration in Godot.
+It focuses on creating HUD elements and managing sound effects and music
+through Godot's audio system.
+</p>
+
+<h3>Subtopics</h3>
+<ul>
+<li>HUD elements (health bars, scores)</li>
+<li>Menu systems using CanvasLayer</li>
+<li>Audio buses for mixing sound effects and music</li>
+</ul>
+
+<h3>Screenshots</h3>
+
+<p><b>Health System UI</b></p>
+<img width="1145" height="633"
+src="https://github.com/user-attachments/assets/5234fffb-5367-4106-bacd-3454d3e4613b">
+
+<p><b>HUD Implementation</b></p>
+<img width="1144" height="631"
+src="https://github.com/user-attachments/assets/e4642676-2136-4db2-ae9c-9946a9cb64cf">
+ 
+
